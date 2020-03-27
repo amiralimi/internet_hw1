@@ -1,0 +1,19 @@
+{
+  "name": "internet_hw1",
+  "version": "1.0.0",
+  "description": "hw1 for internet engineering course ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiralimi/internet_hw1.git"
+  },
+  "author": "amirali mirian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amiralimi/internet_hw1/issues"
+  },
+  "homepage": "https://github.com/amiralimi/internet_hw1#readme"
+}
