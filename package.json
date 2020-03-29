@@ -18,6 +18,7 @@
   "homepage": "https://github.com/amiralimi/internet_hw1#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "point-in-polygon": "^1.0.1"
   }
 }
