@@ -5,7 +5,7 @@ module.exports = {
         let result = [];
         for (let polygon of geo_data.features) {
             let coordinates = polygon.geometry.coordinates[0];
-            if (inside(point, coordinates)){
+            if (inside(point, coordinates)) {
                 result.push(polygon.properties.name);
             }
         }
@@ -13,8 +13,8 @@ module.exports = {
         return JSON.stringify(result);
     },
     check_values: function (point) {
-        for (let number of point){
-            if (isNaN(number)){
+        for (let number of point) {
+            if (isNaN(number)) {
                 return false;
             }
         }
