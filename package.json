@@ -19,6 +19,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "0.0.1-security",
+    "geojson-tools": "^0.2.2",
+    "geojson-validation": "^0.2.1",
     "point-in-polygon": "^1.0.1"
   }
 }
