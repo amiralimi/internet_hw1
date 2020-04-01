@@ -10,7 +10,7 @@ module.exports = {
             }
         }
         result = {'polygons': result};
-        return JSON.stringify(result);
+        return result;
     },
     check_values: function (point) {
         for (let number of point) {

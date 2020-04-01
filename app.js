@@ -13,12 +13,12 @@ app.get('/gis/testpoint', function (request, response) {
     let point = [parseFloat(request.query.lat), parseFloat(request.query.long)];
     if (get_request_helper.check_values(point)) {
         let result = get_request_helper.get_result(geo_data, point);
-        if (result.length === 0) {
+        if (result.polygons.length === 0) {
             console.log(`input ${point} was not found in any polygons.`);
         } else {
             console.log(`input ${point} was found in ${result}.`);
         }
-        response.send(result);
+        response.send(JSON.stringify(result));
     } else {
         console.log(`input values ${point} are not correct`);
         response.status(400);
