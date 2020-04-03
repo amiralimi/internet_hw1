@@ -5,6 +5,7 @@ const put_request_helper = require('./put_reqeust_helper');
 
 const app = express();
 app.use(express.json());
+const port = process.env.PORT || 3000;
 
 let geo_data = read_initial_data.read_data();
 console.log('initial data has been loaded to memory.');
@@ -38,4 +39,4 @@ app.put('/gis/addpolygon', function (request, response) {
     }
 });
 
-app.listen(3000);
+app.listen(port);
