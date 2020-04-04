@@ -117,5 +117,5 @@ dist
 # webstorm files
 .idea/
 
-#inputfile
-inputfile.json
+#db file
+db_file.json

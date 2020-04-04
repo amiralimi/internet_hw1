@@ -9,12 +9,12 @@ module.exports = {
     },
     handle_data: function (data, geo_data) {
         geo_data.features.push(data);
-        fs.writeFile('inputfile.json', JSON.stringify(geo_data), (err => {
+        fs.writeFile('db_file.json', JSON.stringify(geo_data), (err => {
             if (err) {
-                console.log('error in updating the input file.');
+                console.log('error in updating the db file.');
                 throw err;
             }
-            console.log('input file has been updated');
+            console.log('db file has been updated');
         }));
     },
 };
