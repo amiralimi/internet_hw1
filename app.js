@@ -19,6 +19,7 @@ app.get('/gis/testpoint', function (request, response) {
         } else {
             console.log(`input ${point} was found in ${result}.`);
         }
+        response.setHeader('Content-Type', 'application/json');
         response.send(JSON.stringify(result));
     } else {
         console.log(`input values ${point} are not correct`);
@@ -32,6 +33,7 @@ app.put('/gis/addpolygon', function (request, response) {
     if (put_request_helper.validate_input(input_data)) {
         put_request_helper.handle_data(input_data, geo_data);
         console.log('new data is in memory and saved on the new file.');
+        response.setHeader('Content-Type', 'application/json');
         response.send(JSON.stringify(geo_data));
     } else {
         response.status(400);
