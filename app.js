@@ -57,4 +57,9 @@ app.put('/gis/addpolygon', function (request, response) {
     }
 });
 
+app.use(function (req, res, next) {
+    res.status(400);
+    res.send('bad reqeust');
+});
+
 app.listen(port);
